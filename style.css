@@ -12,5 +12,44 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentytwentyone
 Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
 */
+
+body {
+  color: #333333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+header.header-area {
+  background-color: lightblue;
+  color: black;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  width: 60%;
+}
+
+header.header-area h1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+}
+
+header.header-area h3 {
+  color: black;
+  font-size: 16px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#main .post-area .post-meta ul {
+  list-style: none;
+  display: inline-block;
+}
+
