@@ -20,7 +20,7 @@ get_header(); ?>
 				<span class='the_category'>Posted in:<?php the_category() ?></span>
 				<span class='author'><?php the_author() ?></span>
 			</div>
-			<?php the_excerpt() ?>
+			<?php the_content() ?>
 		</article>
 	<?php
         endwhile;
@@ -31,12 +31,8 @@ get_header(); ?>
 </section>
 
 <aside class='side-bar'>
-	<?php dynamic_sidebar('new_sidebar'); ?>
+	<?php get_sidebar() ?>
 </aside>
-
-<div class='pagination'>
-	<?php the_posts_pagination() ?>
-</div>
 
 
 <?php get_footer(); ?>
